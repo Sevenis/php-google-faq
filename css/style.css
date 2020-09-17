@@ -8,6 +8,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+header {
+    /* height: 90px; */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+}
+
 .logo-bar {
     display: flex;
     align-items: center;
@@ -47,15 +55,26 @@ body {
     color: grey;
 }
 
-/* .navbar .google-account {
-    background-color: green;
-} */
-
 
 /* MAIN */
 
 main {
-    height: 100vh;
+    width: 1000px;
+    margin: 70px auto;
+    background-color: white;
+    
+}
+
+main h2 {
+    font-weight: 500;
+    padding-top: 60px;
+    padding-bottom: 15px;
+}
+
+main p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 2;
 }
 
 /* FOOTER */
