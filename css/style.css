@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo-bar {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.logo-bar a {
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0 20px;
+
+}
+
+.navbar {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.navbar .links a {
+    text-decoration: none;
+    font-size: 15px;
+    padding-right: 50px;
+    font-weight: 400;
+    color: grey;
+}
+
+.navbar .google-account a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: grey;
+}
+
+/* .navbar .google-account {
+    background-color: green;
+} */
+
+
+/* MAIN */
+
+main {
+    height: 100vh;
+}
+
+/* FOOTER */
+
+footer {
+    height: 70px;
+    background-color: green;
+}
