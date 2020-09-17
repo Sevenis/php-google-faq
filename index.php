@@ -1,4 +1,10 @@
-<?php  
+<!--
+Riscrivere questa pagina del sito google https://policies.google.com/faq.
+Ci sono diverse domande con relative risposte.
+Gestire il “Database” e la visualizzazione di queste domande e risposte con PHP.
+-->
+
+<?php
 $queries = [
     [
         'domanda' => 'Come state implementando la recente decisione della Corte di giustizia dell\'Unione europea (CGUE) relativa al diritto all\'oblio?',
@@ -29,8 +35,10 @@ $queries = [
         <title>Domande frequenti – Privacy e termini – Google</title>
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
     </head>
     <body>
+        <!-- HEADER -->
         <header>
             <div class="logo-bar">
                 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_74x24dp.png" alt="Google Logo">
@@ -42,22 +50,43 @@ $queries = [
                     <a href="#">Norme sulla privacy</a>
                     <a href="#">Termini di servizio</a>
                     <a href="#">Tecnologie</a>
-                    <a href="#">Domande Frequenti</a>
+                    <a href="#" class="active">Domande Frequenti</a>
                 </div>
                 <div class="google-account">
                     <a href="#">Account Google</a>
                 </div>
             </div>
         </header>
+        <!-- MAIN + CHIAMATA PHP-->
         <main>
             <ul>
                 <?php foreach($queries as $key => $query) {?>
                     <h2> <?php echo $query['domanda'] ?> </h2>
                     <p> <?php echo $query['risposta'] ?></p>
-                 
+
                 <?php }?>
             </ul>
         </main>
-        <footer></footer>
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <div class="foot-links">
+                    <ul>
+                        <li><a href="#">Google</a></li>
+                        <li><a href="#">Tutto su Google</a></li>
+                        <li><a href="#">Termini di servizio</a></li>
+                        <li><a href="#">Tecnologie</a></li>
+                        <li><a href="#">Domande Frequenti</a></li>
+                    </ul>
+                </div>
+                <div class="language">
+                    <i class="fas fa-globe-europe"></i>
+                    <select class="change-language" id="change-language">
+                        <option value="italiano">Italiano</option>
+                        <option value="english">English</option>
+                    </select>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
