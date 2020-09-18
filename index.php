@@ -60,7 +60,7 @@ $queries = [
         <!-- MAIN + CHIAMATA PHP-->
         <main>
             <ul>
-                <?php foreach($queries as $key => $query) {?>
+                <?php foreach($queries as $query) {?>
                     <h2> <?php echo $query['domanda'] ?> </h2>
                     <p> <?php echo $query['risposta'] ?></p>
 
